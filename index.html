@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="top">
+        <!-- <img src="1.png" alt="You Got This"> -->
+        <!-- <div class="head">
+            <h1>Task Manager</h1>
+        </div> -->
+        <div class="intro">
+            <h2>Welcome to Your Task Manager</h2>
+            <p>Stay organized and productive! Add tasks with deadlines, mark them as complete, and track your progress—let's achieve your goals—one task at a time.</p>
+        </div>
+        <!-- <img src="2.png" alt="Checklist"> -->
+    </section>
+
+    <section class="bottom">
+        <div class="task-container">
+            <!-- Menu Bar -->
+            <div class="menu-bar">
+                <button id="allTasksBtn" class="menu-btn active">All Tasks</button>
+                <button id="completedTasksBtn" class="menu-btn">Completed</button>
+                <button id="incompleteTasksBtn" class="menu-btn">Incomplete</button>
+                <button id="deletedTasksBtn" class="menu-btn">Deleted</button>
+                <button id="logoutBtn" class="menu-btn logout">Logout</button>
+            </div>
+
+            <!-- Task Input Section -->
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Enter a new task" maxlength="100">
+                <input type="datetime-local" id="deadlineInput" min="2025-03-23T00:00">
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+
+            <!-- Task List Section -->
+            <ul id="taskList"></ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
